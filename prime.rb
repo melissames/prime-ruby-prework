@@ -1,9 +1,9 @@
 def prime?(num)
   if num <= 1
-    false
+    return false
   else (2..Math.sqrt(num)).each { |i|
     if num % i == 0 && i < num
-      false
+      return false
     end
     }
   end
